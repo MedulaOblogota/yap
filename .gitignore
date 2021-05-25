@@ -1,0 +1,18 @@
+#black list
+#ignoring all filetypes
+*
+
+#white list
+#excluding these
+!/**/
+!*.c
+!*.cpp
+!*.hpp
+!*.h
+!.gitignore
+!.make
+!Makefile
+!makefile
+!*.mk
+!*.a
+!*.so

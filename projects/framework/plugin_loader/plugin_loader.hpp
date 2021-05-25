@@ -1,0 +1,4 @@
+class PluginLoader
+{
+    void operator()();
+};
