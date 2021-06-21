@@ -7,10 +7,10 @@
 
 #include "dlist.h"
 
-#define SIZE_OF_ARRAY (100000)
+#define SIZE_OF_ARRAY (1000)
 #define SIZE_OF_MAX_THREADS (32000)
 #define PRODUCER_CONSUMER_ARR_SIZE (1)
-#define N (100000)
+#define N (100)
 #define NUM_OF_THREADS (100)
 
 #define RESET "\x1B[0m"
@@ -330,7 +330,7 @@ void problem6()
 
 	printf("sum=%lu\n", sum);
 }
-
+/*
 void problem7()
 {
 	int th_id;
@@ -367,13 +367,13 @@ void problem7()
 
 	for (i = 0; i < SIZE_OF_MAX_THREADS; ++i)
 	{
-		/*printf("%d, ", arr2[i]);*/
+
 		sum += arr2[i];
 	}
 
 	printf("sum=%lu\n", sum);
 }
-
+*/
 void OneProducerOneConsumerFlag()
 {
 	pthread_t producer;
@@ -452,7 +452,7 @@ int main(int argc, char *argv[])
 			problem6();
 			break;
 		case 7:			/* using openmp & pragma */
-			problem7();
+		//	problem7();
 			break;
 		case 8:			/* 1 producer, 1 consumer while using a flag. doesn't work well enough */
 			OneProducerOneConsumerFlag();

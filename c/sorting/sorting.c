@@ -467,9 +467,9 @@ void MergeArrays(void *first_part, void *second_part, size_t size1, size_t size2
 		}
 	}
 
+  memcpy((char *)first_part, (char *)temp_arr, (size1+size2)*element_size);
 	for (i = 0; i < size1 + size2; ++i)
 	{
-		memcpy((char *)first_part + i * element_size, (char *)temp_arr + i * element_size, element_size);
 		/*((char *)first_part + i * element_size) = ((char *)temp_arr + i * element_size);*/
 	}
 
